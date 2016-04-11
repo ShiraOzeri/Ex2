@@ -1,0 +1,4159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+<name>Route</name>
+<Style id="icon1">
+<IconStyle>
+<scale>0.5</scale>
+</IconStyle>
+</Style>
+<Style id="style1">
+<LineStyle>
+<color>ffffff00</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+<open>1</open>
+
+<Style id="color0">
+<LineStyle>
+<color>ff0000ff</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color1">
+<LineStyle>
+<color>ff001dff</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color2">
+<LineStyle>
+<color>ff003fff</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color3">
+<LineStyle>
+<color>ff005dff</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color4">
+<LineStyle>
+<color>ff007fff</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color5">
+<LineStyle>
+<color>ff009dff</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color6">
+<LineStyle>
+<color>ff00bfff</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color7">
+<LineStyle>
+<color>ff00ddff</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color8">
+<LineStyle>
+<color>ff00ffff</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color9">
+<LineStyle>
+<color>ff00ffe1</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color10">
+<LineStyle>
+<color>ff00ffbf</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color11">
+<LineStyle>
+<color>ff00ffa1</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color12">
+<LineStyle>
+<color>ff00ff7f</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color13">
+<LineStyle>
+<color>ff00ff61</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color14">
+<LineStyle>
+<color>ff00ff3f</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color15">
+<LineStyle>
+<color>ff00ff21</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color16">
+<LineStyle>
+<color>ff00ff00</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color17">
+<LineStyle>
+<color>ff1dff00</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color18">
+<LineStyle>
+<color>ff3fff00</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color19">
+<LineStyle>
+<color>ff5dff00</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color20">
+<LineStyle>
+<color>ff7fff00</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color21">
+<LineStyle>
+<color>ff9dff00</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color22">
+<LineStyle>
+<color>ffbfff00</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color23">
+<LineStyle>
+<color>ffddff00</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color24">
+<LineStyle>
+<color>ffffff00</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color25">
+<LineStyle>
+<color>ffffe100</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color26">
+<LineStyle>
+<color>ffffbf00</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color27">
+<LineStyle>
+<color>ffffa100</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color28">
+<LineStyle>
+<color>ffff7f00</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color29">
+<LineStyle>
+<color>ffff6100</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color30">
+<LineStyle>
+<color>ffff3f00</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Style id="color31">
+<LineStyle>
+<color>ffff2100</color>
+<colorMode>normal</colorMode>
+<width>5</width>
+</LineStyle>
+</Style>
+    
+<Snippet>Click on link for more information</Snippet>
+<description><![CDATA[<h1>Tour statistics</h1>
+<table>
+<tr><td>Duration</td><td>12 m 49 s</td></tr>
+<tr><td>Distance traveled</td><td>1053 m</td></tr>
+<tr><td>Maximum speed</td><td>22.6 km/h</td></tr>
+<tr><td>Average speed</td><td>4.9 km/h</td></tr>
+<tr><td>Max. satellites rcvd</td><td>9</td></tr>
+<tr><td>Min. satellites rcvd</td><td>5</td></tr>
+</table>
+Note: speed values can be unreliable due to GPS measurement errors.
+]]></description>
+
+<Folder>
+<name>placemark icons</name>
+<open>0</open>
+<Placemark>
+<name>17:56:04 (UTC), 0.0 km/h</name>
+<description>Total distance traveled: 0 m
+Current altitude: 38 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80259340,32.08948102,38</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>17:56:12 (UTC), 10.3 km/h</name>
+<description>Total distance traveled: 21 m
+Current altitude: 34 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80282015,32.08946652,34</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>17:56:31 (UTC), 3.8 km/h</name>
+<description>Total distance traveled: 41 m
+Current altitude: 39 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80303318,32.08944158,39</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>17:56:48 (UTC), 4.3 km/h</name>
+<description>Total distance traveled: 61 m
+Current altitude: 36 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80324537,32.08945723,36</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>17:57:01 (UTC), 6.3 km/h</name>
+<description>Total distance traveled: 84 m
+Current altitude: 30 m
+Number of Satellites: 7</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80340705,32.08960970,30</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>17:57:14 (UTC), 6.0 km/h</name>
+<description>Total distance traveled: 106 m
+Current altitude: 28 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80357755,32.08948160,28</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>17:57:27 (UTC), 5.6 km/h</name>
+<description>Total distance traveled: 126 m
+Current altitude: 20 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80365438,32.08931117,20</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>17:57:40 (UTC), 5.7 km/h</name>
+<description>Total distance traveled: 147 m
+Current altitude: 20 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80377287,32.08915453,20</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>17:57:56 (UTC), 4.5 km/h</name>
+<description>Total distance traveled: 167 m
+Current altitude: 30 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80396465,32.08907582,30</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>17:58:13 (UTC), 4.4 km/h</name>
+<description>Total distance traveled: 188 m
+Current altitude: 18 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80404960,32.08890318,18</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>17:58:32 (UTC), 3.8 km/h</name>
+<description>Total distance traveled: 208 m
+Current altitude: 19 m
+Number of Satellites: 7</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80414317,32.08874053,19</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>17:58:54 (UTC), 3.3 km/h</name>
+<description>Total distance traveled: 228 m
+Current altitude: 24 m
+Number of Satellites: 7</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80429910,32.08861270,24</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>17:59:11 (UTC), 4.5 km/h</name>
+<description>Total distance traveled: 249 m
+Current altitude: 32 m
+Number of Satellites: 6</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80450642,32.08854023,32</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>17:59:31 (UTC), 3.7 km/h</name>
+<description>Total distance traveled: 270 m
+Current altitude: 31 m
+Number of Satellites: 7</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80472255,32.08851592,31</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>17:59:42 (UTC), 6.8 km/h</name>
+<description>Total distance traveled: 291 m
+Current altitude: 37 m
+Number of Satellites: 6</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80487323,32.08838128,37</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>17:59:59 (UTC), 4.4 km/h</name>
+<description>Total distance traveled: 311 m
+Current altitude: 41 m
+Number of Satellites: 7</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80507565,32.08831268,41</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:00:17 (UTC), 4.2 km/h</name>
+<description>Total distance traveled: 332 m
+Current altitude: 45 m
+Number of Satellites: 6</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80522418,32.08817280,45</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:00:33 (UTC), 4.7 km/h</name>
+<description>Total distance traveled: 353 m
+Current altitude: 44 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80541138,32.08807462,44</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:00:50 (UTC), 4.5 km/h</name>
+<description>Total distance traveled: 374 m
+Current altitude: 44 m
+Number of Satellites: 7</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80562190,32.08801192,44</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:01:07 (UTC), 4.3 km/h</name>
+<description>Total distance traveled: 394 m
+Current altitude: 57 m
+Number of Satellites: 6</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80581333,32.08792520,57</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:01:25 (UTC), 4.2 km/h</name>
+<description>Total distance traveled: 415 m
+Current altitude: 55 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80597063,32.08779442,55</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:01:41 (UTC), 4.6 km/h</name>
+<description>Total distance traveled: 435 m
+Current altitude: 46 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80615192,32.08769533,46</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:02:09 (UTC), 2.8 km/h</name>
+<description>Total distance traveled: 457 m
+Current altitude: 43 m
+Number of Satellites: 9</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80635238,32.08759797,43</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:02:25 (UTC), 4.7 km/h</name>
+<description>Total distance traveled: 478 m
+Current altitude: 45 m
+Number of Satellites: 7</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80649945,32.08745630,45</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:02:42 (UTC), 4.3 km/h</name>
+<description>Total distance traveled: 498 m
+Current altitude: 47 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80657422,32.08728705,47</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:02:57 (UTC), 5.0 km/h</name>
+<description>Total distance traveled: 519 m
+Current altitude: 46 m
+Number of Satellites: 9</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80672298,32.08714870,46</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:03:16 (UTC), 4.2 km/h</name>
+<description>Total distance traveled: 541 m
+Current altitude: 46 m
+Number of Satellites: 7</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80690688,32.08702782,46</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:03:37 (UTC), 3.5 km/h</name>
+<description>Total distance traveled: 562 m
+Current altitude: 49 m
+Number of Satellites: 9</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80710228,32.08694555,49</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:03:57 (UTC), 3.7 km/h</name>
+<description>Total distance traveled: 582 m
+Current altitude: 58 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80732152,32.08693075,58</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:04:15 (UTC), 4.1 km/h</name>
+<description>Total distance traveled: 603 m
+Current altitude: 53 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80753755,32.08692230,53</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:04:30 (UTC), 5.0 km/h</name>
+<description>Total distance traveled: 624 m
+Current altitude: 50 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80775407,32.08696448,50</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:04:47 (UTC), 4.6 km/h</name>
+<description>Total distance traveled: 645 m
+Current altitude: 51 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80798378,32.08696977,51</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:05:05 (UTC), 4.2 km/h</name>
+<description>Total distance traveled: 667 m
+Current altitude: 53 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80818760,32.08688855,53</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:05:25 (UTC), 3.7 km/h</name>
+<description>Total distance traveled: 688 m
+Current altitude: 67 m
+Number of Satellites: 7</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80835590,32.08676817,67</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:05:34 (UTC), 8.4 km/h</name>
+<description>Total distance traveled: 709 m
+Current altitude: 50 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80857535,32.08673375,50</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:05:51 (UTC), 4.4 km/h</name>
+<description>Total distance traveled: 729 m
+Current altitude: 40 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80876325,32.08663950,40</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:06:16 (UTC), 2.9 km/h</name>
+<description>Total distance traveled: 749 m
+Current altitude: 39 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80892162,32.08651585,39</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:06:31 (UTC), 5.2 km/h</name>
+<description>Total distance traveled: 771 m
+Current altitude: 47 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80912743,32.08642717,47</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:06:45 (UTC), 5.2 km/h</name>
+<description>Total distance traveled: 791 m
+Current altitude: 45 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80932362,32.08635713,45</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:07:03 (UTC), 4.0 km/h</name>
+<description>Total distance traveled: 812 m
+Current altitude: 42 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80953463,32.08632637,42</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:07:15 (UTC), 6.2 km/h</name>
+<description>Total distance traveled: 832 m
+Current altitude: 27 m
+Number of Satellites: 9</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80973695,32.08625492,27</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:07:28 (UTC), 5.7 km/h</name>
+<description>Total distance traveled: 853 m
+Current altitude: 25 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.80986712,32.08610592,25</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:07:45 (UTC), 4.5 km/h</name>
+<description>Total distance traveled: 874 m
+Current altitude: 13 m
+Number of Satellites: 9</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.81004600,32.08598948,13</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:08:04 (UTC), 3.9 km/h</name>
+<description>Total distance traveled: 894 m
+Current altitude: 21 m
+Number of Satellites: 9</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.81017782,32.08584413,21</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>18:08:23 (UTC), 3.8 km/h</name>
+<description>Total distance traveled: 915 m
+Current altitude: 23 m
+Number of Satellites: 8</description>
+<styleUrl>#icon1</styleUrl>
+<Point>
+<coordinates>34.81029738,32.08569375,23</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Folder>
+<name>line segments</name>
+<open>0</open>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color31</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80259340,32.08948102,38
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color0</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80259340,32.08948102,38
+34.80271718,32.08950690,41
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color20</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80271718,32.08950690,41
+34.80272342,32.08946717,35
+34.80277280,32.08946643,33
+34.80282015,32.08946652,34
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color22</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80282015,32.08946652,34
+34.80285213,32.08948677,35
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80285213,32.08948677,35
+34.80287287,32.08948415,35
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80287287,32.08948415,35
+34.80290487,32.08948678,31
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80290487,32.08948678,31
+34.80291415,32.08947287,33
+34.80291897,32.08945955,36
+34.80293480,32.08945810,39
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80293480,32.08945810,39
+34.80296427,32.08944848,40
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color22</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80296427,32.08944848,40
+34.80300520,32.08945277,39
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80300520,32.08945277,39
+34.80303318,32.08944158,39
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80303318,32.08944158,39
+34.80305885,32.08943710,39
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80305885,32.08943710,39
+34.80308740,32.08942605,39
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80308740,32.08942605,39
+34.80311553,32.08940853,39
+34.80314783,32.08940088,38
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80314783,32.08940088,38
+34.80317733,32.08939792,38
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color29</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80317733,32.08939792,38
+34.80318932,32.08939780,38
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80318932,32.08939780,38
+34.80320030,32.08941613,38
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color20</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80320030,32.08941613,38
+34.80322535,32.08945255,37
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color19</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80322535,32.08945255,37
+34.80326900,32.08947672,34
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color20</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80326900,32.08947672,34
+34.80330897,32.08949580,33
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color19</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80330897,32.08949580,33
+34.80332472,32.08953682,33
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80332472,32.08953682,33
+34.80335622,32.08953350,32
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80335622,32.08953350,32
+34.80338500,32.08953275,31
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color22</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80338500,32.08953275,31
+34.80339683,32.08956558,30
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color19</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80339683,32.08956558,30
+34.80340705,32.08960970,30
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color12</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80340705,32.08960970,30
+34.80341807,32.08967812,28
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color19</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80341807,32.08967812,28
+34.80345440,32.08964730,27
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color0</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80345440,32.08964730,27
+34.80349380,32.08953943,26
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80349380,32.08953943,26
+34.80351658,32.08952700,27
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80351658,32.08952700,27
+34.80354012,32.08950320,27
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80354012,32.08950320,27
+34.80356243,32.08948915,27
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color22</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80356243,32.08948915,27
+34.80359507,32.08946843,30
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80359507,32.08946843,30
+34.80362745,32.08945418,31
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80362745,32.08945418,31
+34.80364843,32.08943425,31
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80364843,32.08943425,31
+34.80366677,32.08940745,30
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80366677,32.08940745,30
+34.80369500,32.08940213,30
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color11</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80369500,32.08940213,30
+34.80365403,32.08934045,22
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80365403,32.08934045,22
+34.80365438,32.08931117,20
+34.80366303,32.08928093,19
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color21</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80366303,32.08928093,19
+34.80368483,32.08924943,21
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80368483,32.08924943,21
+34.80369598,32.08922300,21
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80369598,32.08922300,21
+34.80371912,32.08920130,21
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color22</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80371912,32.08920130,21
+34.80373848,32.08917245,21
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80373848,32.08917245,21
+34.80375812,32.08915572,21
+34.80378042,32.08914470,20
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80378042,32.08914470,20
+34.80380993,32.08913650,22
+34.80383197,32.08911628,25
+34.80385507,32.08910052,25
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80385507,32.08910052,25
+34.80387478,32.08909212,25
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80387478,32.08909212,25
+34.80390892,32.08908838,28
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80390892,32.08908838,28
+34.80392682,32.08907803,28
+34.80394662,32.08907223,29
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color20</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80394662,32.08907223,29
+34.80399348,32.08908397,32
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color19</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80399348,32.08908397,32
+34.80398467,32.08904197,29
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color4</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80398467,32.08904197,29
+34.80390908,32.08896932,18
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80390908,32.08896932,18
+34.80390192,32.08894412,15
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80390192,32.08894412,15
+34.80392545,32.08894203,15
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80392545,32.08894203,15
+34.80396075,32.08893188,15
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80396075,32.08893188,15
+34.80398130,32.08892425,16
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80398130,32.08892425,16
+34.80399927,32.08892058,16
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color18</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80399927,32.08892058,16
+34.80404960,32.08890318,18
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80404960,32.08890318,18
+34.80407403,32.08888120,18
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80407403,32.08888120,18
+34.80408758,32.08886120,18
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color29</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80408758,32.08886120,18
+34.80409362,32.08884653,21
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color21</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80409362,32.08884653,21
+34.80412490,32.08882285,20
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80412490,32.08882285,20
+34.80413192,32.08880555,19
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80413192,32.08880555,19
+34.80412543,32.08878333,21
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80412543,32.08878333,21
+34.80413437,32.08875923,21
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80413437,32.08875923,21
+34.80414238,32.08874827,20
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80414238,32.08874827,20
+34.80415617,32.08872630,17
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80415617,32.08872630,17
+34.80416313,32.08870425,17
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80416313,32.08870425,17
+34.80417638,32.08868093,17
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80417638,32.08868093,17
+34.80416507,32.08867017,19
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80416507,32.08867017,19
+34.80417800,32.08864183,19
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80417800,32.08864183,19
+34.80419262,32.08863098,21
+34.80420453,32.08861887,21
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80420453,32.08861887,21
+34.80423633,32.08862162,22
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80423633,32.08862162,22
+34.80426062,32.08861592,22
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80426062,32.08861592,22
+34.80428245,32.08861807,23
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80428245,32.08861807,23
+34.80429910,32.08861270,24
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80429910,32.08861270,24
+34.80432797,32.08860928,24
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80432797,32.08860928,24
+34.80435180,32.08861005,24
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80435180,32.08861005,24
+34.80437923,32.08860230,26
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80437923,32.08860230,26
+34.80440792,32.08859177,26
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80440792,32.08859177,26
+34.80442453,32.08857268,28
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80442453,32.08857268,28
+34.80444952,32.08855288,31
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80444952,32.08855288,31
+34.80446840,32.08855930,31
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80446840,32.08855930,31
+34.80449388,32.08854645,32
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80449388,32.08854645,32
+34.80451622,32.08854312,33
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80451622,32.08854312,33
+34.80454282,32.08853460,34
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80454282,32.08853460,34
+34.80457375,32.08852655,35
+34.80459783,32.08851168,35
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80459783,32.08851168,35
+34.80462318,32.08851005,34
+34.80464725,32.08850142,34
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color21</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80464725,32.08850142,34
+34.80466508,32.08853335,30
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80466508,32.08853335,30
+34.80468462,32.08853462,31
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80468462,32.08853462,31
+34.80469892,32.08852905,31
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80469892,32.08852905,31
+34.80471563,32.08852407,30
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80471563,32.08852407,30
+34.80473625,32.08849757,33
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color20</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80473625,32.08849757,33
+34.80477288,32.08847285,35
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color18</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80477288,32.08847285,35
+34.80480642,32.08843448,36
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80480642,32.08843448,36
+34.80481975,32.08841955,35
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color21</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80481975,32.08841955,35
+34.80484178,32.08838837,37
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80484178,32.08838837,37
+34.80487323,32.08838128,37
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80487323,32.08838128,37
+34.80489157,32.08836722,39
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80489157,32.08836722,39
+34.80490175,32.08835342,38
+34.80491143,32.08834095,38
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80491143,32.08834095,38
+34.80493353,32.08832832,39
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color20</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80493353,32.08832832,39
+34.80497817,32.08833715,36
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80497817,32.08833715,36
+34.80500463,32.08833510,38
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color22</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80500463,32.08833510,38
+34.80504325,32.08833362,41
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80504325,32.08833362,41
+34.80506920,32.08832078,41
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80506920,32.08832078,41
+34.80508358,32.08830572,43
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80508358,32.08830572,43
+34.80510553,32.08828982,41
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80510553,32.08828982,41
+34.80512727,32.08827285,40
+34.80515127,32.08825867,41
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80515127,32.08825867,41
+34.80516637,32.08824427,40
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80516637,32.08824427,40
+34.80517808,32.08823053,41
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80517808,32.08823053,41
+34.80519968,32.08821505,40
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80519968,32.08821505,40
+34.80519750,32.08819895,43
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80519750,32.08819895,43
+34.80521627,32.08818438,46
+34.80523185,32.08816383,46
+34.80524485,32.08814523,46
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80524485,32.08814523,46
+34.80526035,32.08812293,47
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color19</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80526035,32.08812293,47
+34.80530665,32.08810568,42
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color21</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80530665,32.08810568,42
+34.80534962,32.08811555,42
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80534962,32.08811555,42
+34.80536967,32.08810000,42
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80536967,32.08810000,42
+34.80538485,32.08808587,43
+34.80540490,32.08807903,43
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80540490,32.08807903,43
+34.80541818,32.08806573,45
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color21</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80541818,32.08806573,45
+34.80546027,32.08807373,44
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80546027,32.08807373,44
+34.80548922,32.08807207,44
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80548922,32.08807207,44
+34.80550633,32.08806435,44
+34.80550707,32.08804702,46
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80550707,32.08804702,46
+34.80553925,32.08803840,46
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80553925,32.08803840,46
+34.80556877,32.08803138,45
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80556877,32.08803138,45
+34.80558973,32.08801743,47
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80558973,32.08801743,47
+34.80562190,32.08801192,44
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80562190,32.08801192,44
+34.80564068,32.08800373,43
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80564068,32.08800373,43
+34.80566993,32.08800682,47
+34.80569882,32.08800228,49
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80569882,32.08800228,49
+34.80572320,32.08798918,46
+34.80573737,32.08797132,49
+34.80575682,32.08795703,52
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80575682,32.08795703,52
+34.80578358,32.08794552,54
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80578358,32.08794552,54
+34.80580063,32.08793080,56
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80580063,32.08793080,56
+34.80583015,32.08792132,57
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80583015,32.08792132,57
+34.80585322,32.08791162,59
+34.80586952,32.08789218,60
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80586952,32.08789218,60
+34.80588423,32.08787737,62
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80588423,32.08787737,62
+34.80589292,32.08786620,64
+34.80589008,32.08785302,64
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80589008,32.08785302,64
+34.80589942,32.08782867,60
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80589942,32.08782867,60
+34.80593295,32.08781983,58
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80593295,32.08781983,58
+34.80595605,32.08781590,57
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color21</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80595605,32.08781590,57
+34.80598292,32.08778753,54
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80598292,32.08778753,54
+34.80601493,32.08777887,54
+34.80604865,32.08778308,53
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80604865,32.08778308,53
+34.80607213,32.08778642,54
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color20</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80607213,32.08778642,54
+34.80611288,32.08776502,50
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80611288,32.08776502,50
+34.80612042,32.08773722,49
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80612042,32.08773722,49
+34.80612983,32.08771233,48
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80612983,32.08771233,48
+34.80614203,32.08769782,47
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80614203,32.08769782,47
+34.80615662,32.08768818,47
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80615662,32.08768818,47
+34.80617695,32.08767665,49
+34.80619990,32.08767185,49
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80619990,32.08767185,49
+34.80621213,32.08766842,48
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80621213,32.08766842,48
+34.80622770,32.08765383,48
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80622770,32.08765383,48
+34.80624428,32.08764952,48
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color29</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80624428,32.08764952,48
+34.80626120,32.08765337,47
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80626120,32.08765337,47
+34.80627602,32.08765232,44
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color30</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80627602,32.08765232,44
+34.80628667,32.08765295,43
+34.80629397,32.08764523,43
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80629397,32.08764523,43
+34.80631133,32.08762877,44
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80631133,32.08762877,44
+34.80633668,32.08760785,43
+34.80636593,32.08759317,43
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80636593,32.08759317,43
+34.80638442,32.08757097,43
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80638442,32.08757097,43
+34.80641505,32.08755895,43
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80641505,32.08755895,43
+34.80643732,32.08754257,44
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80643732,32.08754257,44
+34.80644915,32.08752190,45
+34.80646790,32.08750610,45
+34.80648353,32.08748740,45
+34.80649217,32.08746583,45
+34.80650457,32.08744487,44
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80650457,32.08744487,44
+34.80652065,32.08742350,45
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80652065,32.08742350,45
+34.80651312,32.08740403,47
+34.80651400,32.08738550,49
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80651400,32.08738550,49
+34.80651590,32.08736348,52
+34.80653308,32.08734672,50
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80653308,32.08734672,50
+34.80653785,32.08733180,48
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80653785,32.08733180,48
+34.80655780,32.08731108,47
+34.80657422,32.08728705,47
+34.80659222,32.08726673,47
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80659222,32.08726673,47
+34.80660767,32.08724623,46
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80660767,32.08724623,46
+34.80661308,32.08722780,49
+34.80662600,32.08721053,50
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80662600,32.08721053,50
+34.80665172,32.08719397,49
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color19</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80665172,32.08719397,49
+34.80669708,32.08717595,45
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80669708,32.08717595,45
+34.80671712,32.08715567,45
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80671712,32.08715567,45
+34.80673038,32.08714467,46
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80673038,32.08714467,46
+34.80675300,32.08712607,45
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80675300,32.08712607,45
+34.80676637,32.08710938,45
+34.80678437,32.08709757,45
+34.80680060,32.08708325,45
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80680060,32.08708325,45
+34.80680790,32.08707280,46
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80680790,32.08707280,46
+34.80682335,32.08706012,47
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80682335,32.08706012,47
+34.80683170,32.08704565,49
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80683170,32.08704565,49
+34.80685065,32.08703267,51
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color18</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80685065,32.08703267,51
+34.80690688,32.08702782,46
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color22</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80690688,32.08702782,46
+34.80694267,32.08701640,45
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80694267,32.08701640,45
+34.80696725,32.08700617,45
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color30</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80696725,32.08700617,45
+34.80697173,32.08699703,48
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80697173,32.08699703,48
+34.80698060,32.08698880,49
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80698060,32.08698880,49
+34.80699467,32.08697677,51
+34.80701178,32.08697013,51
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80701178,32.08697013,51
+34.80702895,32.08695377,51
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color20</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80702895,32.08695377,51
+34.80707637,32.08695097,50
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color29</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80707637,32.08695097,50
+34.80708728,32.08694717,51
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80708728,32.08694717,51
+34.80711615,32.08694657,49
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80711615,32.08694657,49
+34.80711837,32.08693395,50
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80711837,32.08693395,50
+34.80713390,32.08691743,52
+34.80715622,32.08690960,53
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80715622,32.08690960,53
+34.80718580,32.08689957,54
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80718580,32.08689957,54
+34.80719915,32.08689048,55
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80719915,32.08689048,55
+34.80721240,32.08689007,56
+34.80722893,32.08688992,57
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color17</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80722893,32.08688992,57
+34.80728210,32.08691742,55
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80728210,32.08691742,55
+34.80730687,32.08692097,57
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80730687,32.08692097,57
+34.80733502,32.08692797,58
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80733502,32.08692797,58
+34.80735170,32.08692605,59
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80735170,32.08692605,59
+34.80737743,32.08692445,58
+34.80740458,32.08691615,57
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80740458,32.08691615,57
+34.80742632,32.08691037,57
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80742632,32.08691037,57
+34.80744507,32.08690497,57
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80744507,32.08690497,57
+34.80746983,32.08690213,57
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80746983,32.08690213,57
+34.80749255,32.08690482,56
+34.80751578,32.08691183,55
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color21</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80751578,32.08691183,55
+34.80755293,32.08693030,52
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80755293,32.08693030,52
+34.80757660,32.08692962,52
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color22</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80757660,32.08692962,52
+34.80761530,32.08694038,50
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80761530,32.08694038,50
+34.80763740,32.08693798,52
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80763740,32.08693798,52
+34.80766693,32.08694980,50
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80766693,32.08694980,50
+34.80769967,32.08695570,50
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80769967,32.08695570,50
+34.80772520,32.08695637,50
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80772520,32.08695637,50
+34.80775407,32.08696448,50
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80775407,32.08696448,50
+34.80778245,32.08696877,51
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80778245,32.08696877,51
+34.80781318,32.08697458,49
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80781318,32.08697458,49
+34.80783707,32.08696995,51
+34.80786162,32.08697007,51
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80786162,32.08697007,51
+34.80788980,32.08697605,52
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80788980,32.08697605,52
+34.80792280,32.08697557,52
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color29</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80792280,32.08697557,52
+34.80793358,32.08697153,54
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80793358,32.08697153,54
+34.80795888,32.08696722,53
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color19</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80795888,32.08696722,53
+34.80801153,32.08696982,49
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80801153,32.08696982,49
+34.80804573,32.08696172,50
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80804573,32.08696172,50
+34.80806003,32.08695375,53
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80806003,32.08695375,53
+34.80808522,32.08694278,54
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80808522,32.08694278,54
+34.80811683,32.08693285,53
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80811683,32.08693285,53
+34.80814215,32.08692487,51
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color29</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80814215,32.08692487,51
+34.80815458,32.08692503,52
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80815458,32.08692503,52
+34.80816678,32.08691335,52
+34.80817638,32.08689990,52
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80817638,32.08689990,52
+34.80818383,32.08688070,56
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80818383,32.08688070,56
+34.80819973,32.08686327,59
+34.80821955,32.08684967,59
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80821955,32.08684967,59
+34.80824163,32.08684090,60
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80824163,32.08684090,60
+34.80825702,32.08682903,61
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80825702,32.08682903,61
+34.80827942,32.08681443,63
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80827942,32.08681443,63
+34.80829120,32.08680467,64
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80829120,32.08680467,64
+34.80831662,32.08679757,63
+34.80833840,32.08678637,63
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80833840,32.08678637,63
+34.80834568,32.08677243,66
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80834568,32.08677243,66
+34.80836578,32.08676487,67
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color20</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80836578,32.08676487,67
+34.80841405,32.08675530,62
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color12</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80841405,32.08675530,62
+34.80849553,32.08675190,53
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color17</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80849553,32.08675190,53
+34.80855402,32.08674765,48
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80855402,32.08674765,48
+34.80857535,32.08673375,50
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80857535,32.08673375,50
+34.80858700,32.08672250,51
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80858700,32.08672250,51
+34.80860052,32.08671545,51
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color29</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80860052,32.08671545,51
+34.80860712,32.08669987,56
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80860712,32.08669987,56
+34.80862793,32.08668593,58
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80862793,32.08668593,58
+34.80864855,32.08666557,59
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color13</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80864855,32.08666557,59
+34.80872413,32.08665467,45
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80872413,32.08665467,45
+34.80875032,32.08664603,43
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80875032,32.08664603,43
+34.80877532,32.08663117,37
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80877532,32.08663117,37
+34.80878077,32.08661628,35
+34.80878355,32.08660075,34
+34.80879577,32.08658990,33
+34.80881062,32.08657830,31
+34.80882545,32.08656873,32
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80882545,32.08656873,32
+34.80884068,32.08658133,32
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80884068,32.08658133,32
+34.80886678,32.08659235,29
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80886678,32.08659235,29
+34.80889267,32.08659970,27
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color18</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80889267,32.08659970,27
+34.80891613,32.08655777,27
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80891613,32.08655777,27
+34.80892687,32.08653400,29
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80892687,32.08653400,29
+34.80892053,32.08652480,34
+34.80892448,32.08650498,41
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80892448,32.08650498,41
+34.80893735,32.08648478,45
+34.80896347,32.08648128,45
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80896347,32.08648128,45
+34.80899230,32.08647725,46
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80899230,32.08647725,46
+34.80902392,32.08646732,48
+34.80905523,32.08645463,48
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color22</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80905523,32.08645463,48
+34.80909050,32.08644025,47
+34.80912743,32.08642717,47
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80912743,32.08642717,47
+34.80915568,32.08641093,48
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80915568,32.08641093,48
+34.80918338,32.08639930,49
+34.80921422,32.08638933,47
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color22</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80921422,32.08638933,47
+34.80924260,32.08636797,47
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80924260,32.08636797,47
+34.80926858,32.08635698,47
+34.80929558,32.08635770,46
+34.80932362,32.08635713,45
+34.80934778,32.08636350,45
+34.80937498,32.08636167,44
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color15</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80937498,32.08636167,44
+34.80941148,32.08631075,44
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80941148,32.08631075,44
+34.80942242,32.08632838,43
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80942242,32.08632838,43
+34.80944485,32.08634708,42
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80944485,32.08634708,42
+34.80946305,32.08634055,42
+34.80948340,32.08633703,41
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color22</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80948340,32.08633703,41
+34.80951700,32.08632055,42
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80951700,32.08632055,42
+34.80953463,32.08632637,42
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color21</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80953463,32.08632637,42
+34.80957097,32.08630380,42
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80957097,32.08630380,42
+34.80960127,32.08629380,38
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color21</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80960127,32.08629380,38
+34.80963615,32.08627160,36
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color22</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80963615,32.08627160,36
+34.80967170,32.08626115,33
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80967170,32.08626115,33
+34.80970693,32.08627060,29
+34.80973695,32.08625492,27
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color19</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80973695,32.08625492,27
+34.80974535,32.08620968,28
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color20</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80974535,32.08620968,28
+34.80976207,32.08617307,29
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color21</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80976207,32.08617307,29
+34.80977563,32.08613718,31
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color20</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80977563,32.08613718,31
+34.80982042,32.08612063,27
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80982042,32.08612063,27
+34.80983610,32.08611142,27
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80983610,32.08611142,27
+34.80986712,32.08610592,25
+34.80989727,32.08610345,22
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80989727,32.08610345,22
+34.80993005,32.08609562,18
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80993005,32.08609562,18
+34.80995127,32.08609465,16
+34.80997372,32.08609498,12
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80997372,32.08609498,12
+34.80998637,32.08609425,12
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.80998637,32.08609425,12
+34.81000303,32.08606763,14
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81000303,32.08606763,14
+34.81002173,32.08605268,13
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color21</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81002173,32.08605268,13
+34.81003437,32.08601663,13
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81003437,32.08601663,13
+34.81004892,32.08599195,14
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color21</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81004892,32.08599195,14
+34.81004325,32.08595548,17
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color19</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81004325,32.08595548,17
+34.81005137,32.08591247,20
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color29</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81005137,32.08591247,20
+34.81006063,32.08590652,20
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81006063,32.08590652,20
+34.81007435,32.08589950,20
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81007435,32.08589950,20
+34.81010242,32.08589027,20
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81010242,32.08589027,20
+34.81012362,32.08588053,20
+34.81013680,32.08586263,21
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color24</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81013680,32.08586263,21
+34.81015642,32.08584383,22
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81015642,32.08584383,22
+34.81017782,32.08584413,21
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color28</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81017782,32.08584413,21
+34.81018670,32.08583357,21
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81018670,32.08583357,21
+34.81019592,32.08582070,20
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81019592,32.08582070,20
+34.81021545,32.08580900,20
+34.81022877,32.08579340,19
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81022877,32.08579340,19
+34.81023897,32.08578093,18
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81023897,32.08578093,18
+34.81024190,32.08576283,17
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81024190,32.08576283,17
+34.81025013,32.08573205,17
+34.81028360,32.08571978,21
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color27</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81028360,32.08571978,21
+34.81029720,32.08570750,22
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81029720,32.08570750,22
+34.81030603,32.08568772,25
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color25</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81030603,32.08568772,25
+34.81032012,32.08566627,27
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color26</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81032012,32.08566627,27
+34.81034398,32.08567228,32
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color22</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81034398,32.08567228,32
+34.81038013,32.08568095,29
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color23</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81038013,32.08568095,29
+34.81041235,32.08567270,31
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color31</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81041235,32.08567270,31
+34.81042013,32.08567980,29
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color29</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81042013,32.08567980,29
+34.81043760,32.08568045,30
+34.81044838,32.08568167,30
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color30</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81044838,32.08568167,30
+34.81045917,32.08568512,30
+</coordinates></LineString></Placemark>
+<Placemark>
+<name>line part</name>
+<styleUrl>#color31</styleUrl>
+<LineString>
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<altitudeMode>clampToGround</altitudeMode>
+<!-- kml:altitudeModeEnum: clampToGround, relativeToGround, or absolute -->
+<coordinates>34.81045917,32.08568512,30
+34.81045057,32.08567882,30
+</coordinates></LineString></Placemark>
+</Folder>
+</Document>
+</kml>
