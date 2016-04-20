@@ -1,4 +1,4 @@
-# To convert you nust to install same libs:
+ To convert you nust to install same libs:
 1. serial
 2. nmeagram 
 
