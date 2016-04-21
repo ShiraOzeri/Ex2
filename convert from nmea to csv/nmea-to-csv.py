@@ -21,67 +21,52 @@ with open(INPUT_FILENAME, 'r') as input_file:
         writer = csv.writer(output_file, delimiter=',', lineterminator='\n')
 
         # write the header line to the csv file
-        writer.writerow(['date_and_time', 'lat', 'lon', 'speed'])
+        writer.writerow(['date','time','speed', 'latitude','latitude direction' ,'longtitude','longtitude direction', 'fix', 'horizontal', 'altitude','altitude direction'])
 
         # iterate over all the rows in the nmea file
         for row in reader:
 
             # skip all lines that do not start with $GPRMC
 
-
-            if row[0] in ("$GPGGA", "$GPGLL",'$GPRMC'):
+            if row[0] in ("$GPRMC"):
+                speed=row[7]
+                date=row[9]
+            if row[0] in ("$GPGGA", "$GPGLL"):
 
                 # for each row, fetch the values from the row's columns
                 # columns that are not used contain technical GPS stuff that you are probably not interested in
-                i=2;
-                time = row[1]
-                if row[0].startswith('$GPRMC'):
-                    warning = row[2]
-                    i=i+1
-                else:
-                    warning=0
-                lat = row[i]
-                i=i+1
-                lat_direction = row[i]
-                i=i+1
-                lon = row[i]
-                i=i+1
-                lon_direction = row[i]
-                i=i+1
-                if not row[0].startswith('$GPRMC'):
-                    i=i+2
-                speed = row[i]
-                i=i+2
-                if i==9:
-                    date =  row[i]
-                else:
-                    date=0
 
-                # if the "warning" value is "V" (void), you may want to skip it since this is an indicator for an incomplete data row)
-                if warning == 'V':
-                    continue
+                time = row[1]
+                latitude = row[2]
+                latitude_direction = row[3]
+                longtitude = row[4]
+                longtitude_direction = row[5]
+                fix=row[6]
+                horizontal=row[7]
+                altitude=row[8]
+                altitude_direction=row[9]
+
 
                 # merge the time and date columns into one Python datetime object (usually more convenient than having both separately)
-                if date==0:
-                    date_and_time = datetime.strptime(time, '%H%M%S.%f')
-                else:
-                    date_and_time = datetime.strptime(date + ' ' + time, '%d%m%y %H%M%S.%f')
+                time= datetime.strptime(time, '%H%M%S.%f')
+                date= datetime.strptime(date, '%d%m%y')
 
                 # convert the Python datetime into your preferred string format, see http://www.tutorialspoint.com/python/time_strftime.htm for futher possibilities
-                date_and_time = date_and_time.strftime('%y-%m-%d %H:%M:%S.%f')[:-3] # [:-3] cuts off the last three characters (trailing zeros from the fractional seconds)
+                date = date.strftime('%d-%m-%y')[:-3] # [:-3] cuts off the last three characters (trailing zeros from the fractional seconds)
 
+                time = time.strftime('%H:%M:%S.%f')[:-3]
                 # lat and lon values in the $GPRMC nmea sentences come in an rather uncommon format. for convenience, convert them into the commonly used decimal degree format which most applications can read.
                 # the "high level" formula for conversion is: DDMM.MMMMM => DD + (YY.ZZZZ / 60), multiplicated with (-1) if direction is either South or West
                 # the following reflects this formula in mathematical terms.
                 # lat and lon have to be converted from string to float in order to do calculations with them.
                 # you probably want the values rounded to 6 digits after the point for better readability.
-                lat = round(math.floor(float(lat) / 100) + (float(lat) % 100) / 60, 6)
-                if lat_direction == 'S':
-                    lat = lat * -1
+                latitude = round(math.floor(float(latitude) / 100) + (float(latitude) % 100) / 60, 6)
+                if latitude_direction == 'S':
+                    latitude = latitude * -1
 
-                lon = round(math.floor(float(lon) / 100) + (float(lon) % 100) / 60, 6)
-                if lon_direction == 'W':
-                    lon = lon * -1
+                longtitude = round(math.floor(float(longtitude) / 100) + (float(longtitude) % 100) / 60, 6)
+                if longtitude_direction == 'W':
+                    longtitude = longtitude * -1
 
                 # speed is given in knots, you'll probably rather want it in km/h and rounded to full integer values.
                 # speed has to be converted from string to float first in order to do calculations with it.
@@ -89,5 +74,5 @@ with open(INPUT_FILENAME, 'r') as input_file:
                 speed = int(round(float(speed) * 1.852, 0))
 
                 # write the calculated/formatted values of the row that we just read into the csv file
-                writer.writerow([date_and_time, lat, lon, speed])
-                print "Done!"
+                writer.writerow([date,time,speed, latitude,latitude_direction,longtitude,longtitude_direction, fix, horizontal, altitude,altitude_direction])
+print "Done!"
