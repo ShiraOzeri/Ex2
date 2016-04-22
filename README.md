@@ -1,4 +1,4 @@
-![Hello](http://postimg.org/image/l56vmvfcn/)
+
 
 ## Ex2 system
 ##Our system does several things:
@@ -26,7 +26,7 @@
 use on Python and with MySQL 
 
 
-
+![Hello](http://postimg.org/image/l56vmvfcn/)
 
 
 
