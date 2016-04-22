@@ -1,5 +1,5 @@
 # Ex2 system
-#Our does several things:
+#Our system does several things:
 1.Upload a NMEA to Data Base
 2. Converting files from mnea files to kml and csv files
 3. Answers the following questions depending on the file NMEA:
