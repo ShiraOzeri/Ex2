@@ -2,9 +2,9 @@
 ##Our system does several things:
 - 1.Upload a NMEA to Data Base
 - 2. Converting files from mnea files to kml and csv files
--  3. Answers the following questions depending on the file NMEA:
+  #3. Answers the following questions depending on the file NMEA:
       - Creating a new route between specific hours.
-     - Return a number of satellites that operated.
+      - Return a number of satellites that operated.
       - Stop a route if passing maximum speed/maximum height (above sea level).
       - Return date line (GPRMC).
      - Maximum speed above ground.
