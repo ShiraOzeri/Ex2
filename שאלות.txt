@@ -1,0 +1,12 @@
+1.	Creating a new route between specific hours.
+2.	Return a number of satellites that operated.
+3.	Stop a route if passing maximum speed/maximum height (above sea level).
+4.	Return date line (GPRMC).
+5.	Maximum speed above ground
+6.	Return route time.
+7.	Is the file working properly or not.
+
+8.	Erase all the marks in a specified longitude.
+
+9.	Erase all the marks in a specified latitude.
+10.	Return time of beginning/end of route.
