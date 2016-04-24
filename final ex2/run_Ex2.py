@@ -1,3 +1,4 @@
+#!/usr/bin/python27
 from Tkinter import *
 from Tkinter import Tk
 import os, string, sys
@@ -29,180 +30,363 @@ def f0():
         flag = 0
         # Create table
         c.execute('''CREATE TABLE info
-                         (date text,time text,speed float, latitude text, latitude_direction text, longitude text, longitude_direction text,fix text,horizontal_dilution text,altitude text,direct_of_altitude text,altitude_location text)''')
+                         (date text,time text,speed float, latitude text, latitude_direction text, longtitude text, longitude_direction text,fix text,horizontal_dilution text,altitude text,direct_of_altitude text)''')
         # create a csv reader object from the input file (nmea files are basically csv)
+        date=None
+        time=None
+        flag = 0
         for row in reader:
-            # skip all lines that do not start with $GPGGA
-            if not row:
-                continue
-            elif row[0].startswith('$GPGGA') and row[6]=='1':
-                time= float(row[1])
-                latitude = row[2]
-                lat_direction = row[3]
-                longitude = row[4]
-                lon_direction = row[5]
-                fix = row[6]
-                horizontal = row[7]
-                altitude = row[8]
-                direct_altitude = row[9]
-                altitude_location = row[10]
-                flag = 1
-            elif row[0].startswith('$GPRMC') and flag==1:
+
+            if row[0].startswith('$GPGGA'):
+
+                if row[6] != '1':
+                    fix = 0
+                    time = 0
+                    latitude = 0
+                    latitude_direction = 0
+                    longtitude = 0
+                    longtitude_direction = 0
+                    horizontal = 0
+                    altitude = 0
+                    altitude_direction = 0
+                else:
+                    fix=1
+                    time = float(row[1])
+                    latitude = row[2]
+                    latitude_direction = row[3]
+                    longtitude = row[4]
+                    longtitude_direction = row[5]
+                    horizontal = row[7]
+                    altitude = row[8]
+                    altitude_direction = row[9]
+                    flag = 1
+            elif row[0].startswith('$GPRMC'):
                 speed = row[7]
                 date = row[9]
                 warning = row[2]
                 if warning == 'V':
                     continue
-                c.execute("INSERT INTO info VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",(date,time,speed, latitude, lat_direction, longitude, lon_direction,fix,horizontal,altitude,direct_altitude,altitude_location))
+            if date!=None and time!=None:
+                 c.execute("INSERT INTO info VALUES (?,?,?,?,?,?,?,?,?,?,?)",(date,time,speed, latitude, latitude_direction, longtitude, longtitude_direction,fix,horizontal,altitude,altitude_direction))
             # Save (commit) the changes
-                conn.commit()
-                flag=0
-            else:
-                continue
+                 conn.commit()
+                 flag=0
+                 date=None
+                 time=None
+
     # We can also close the connection if we are done with it.
     # Just be sure any changes have been committed or they will be lost.
     #conn.close()
 
 
 def f1():
-    print 1
+    def f1_1():
+        def f1_2():
+            end_time = 0
+            try:
+                end_time = (float)(E2.get())
+            except:
+                print 'no enter a float number'
+            root3.destroy()
+            c.execute('DELETE FROM info WHERE time<?', (end_time,))
+            conn.commit()
+        begin_time = 0
+        try:
+            begin_time = (float)(E1.get())
+        except:
+            print 'no enter a float number'
+        c.execute('DELETE FROM info WHERE time<?', (begin_time,))
+        conn.commit()
+        root2.destroy()
+
+        root3 = Tk()
+        root3.title("end time")
+        root3.geometry("600x200")
+
+        E2 = Entry(root3, bd=5, text="enter a end time", fg="blue", width=20, background='pink')
+
+        Button1_2 = Button(root3, text="enter", command=f1_2, fg="blue", width=20, background='pink')
+        Button1_2.pack(side=LEFT)
+        E2.pack(side=RIGHT)
+
+    root2 = Tk()
+    root2.title("begin time")
+    root2.geometry("600x200")
+
+    E1 = Entry(root2, bd=5, text="enter a begin time",fg="blue", width=20, background='pink')
+    Button1_1 = Button(root2, text="enter", command=f1_1, fg="blue", width=20, background='pink')
+    Button1_1.pack(side=RIGHT)
+    E1.pack(side=LEFT)
+
 
 def f2():
-    print 2
+    c.execute('''SELECT horizontal_dilution text FROM info''')
+    horizontal = c.fetchone()
+
+    while True:
+        if horizontal == None:
+            break
+        if (horizontal[0] != '0'):
+            print horizontal[0]
+            return
+        else:
+            horizontal = c.fetchall()
+    print ('the file is not fix')
 
 def f3():
-    print 3
+    def f3_1():
+        begin_alt = 0
+        try:
+            begin_alt = (float)(E1.get())
+        except:
+            print 'no enter a float number'
+        root2.destroy()
+        c.execute('DELETE FROM info WHERE altitude>?', (begin_alt,))
+
+        conn.commit()
+
+    root2 = Tk()
+    root2.title("Question 3")
+    root2.geometry("600x200")
+
+    E1 = Entry(root2, bd=5, text="enter a altitude point", width=50, background='pink')
+    Button3_1 = Button(root2, text="enter", command=f3_1, fg="blue", width=20, background='pink')
+    Button3_1.pack(side=LEFT)
+    E1.pack(side=RIGHT)
 
 def f4():
+    c.execute('''SELECT fix FROM info''')
+    fix=c.fetchone()
     c.execute('''SELECT date text FROM info''')
     date=c.fetchone()
-    print ('the date is {0}'.format(date[0], type(date[0])))
+    i=0
+    while True:
+        if (date==None):
+            break
+        if (fix[i]=='1'):
+            print (date[0])
+            return
+        else:
+            date=c.fetchone()
+    print('the file is not fix')
 
 
 def f5():
+    fix = c.execute('''SELECT fix FROM info''')
+    fix = c.fetchall()
     speed=c.execute('''SELECT speed float FROM info''')
     speed=c.fetchall()
-    max=0
+    max=-1
     indexMax=0
     i=0
     for row in speed:
-        i=i+1
-        if row>max:
-            max=row
-            indexMax=i
-    print('the maximum speed is{0}'.format(speed[indexMax-1],type(speed[indexMax-1])))
+       if (fix[i]!=(u'0',)):
+             if row>max:
+                 max=row
+                 indexMax=i
+       i=i+1
+    if (max==-1):
+        print 'the file is not fix'
+    else:
+        print('the maximum speed is{0}'.format(speed[indexMax-1],type(speed[indexMax-1])))
 
 def f6():
     time=c.execute('''SELECT time text FROM info''')
-    time=c.fetchall()
-    last=0                              #מג פסדת
-    for row in time:
-        last=row
-    first=time[0]
-    print first
-    print last
+    time=c.fetchone()
+    first=0
+    while True:
+        if time==None:
+            break
+        if (first==0):
+            first = (float)(time[0])
+            time=c.fetchone()
+        else:
+            break
+
+    last=first
+    while True:
+        if time == None:
+            break
+        if ( (float)(time[0])!= 0):
+            last=(float)(time[0])
+            time = c.fetchone()
+        else:
+            break
+    if (first==0):
+        print'the file is not fix'
+    else:
+        print (last-first)
    # print('the ruote time is', last-time)
 
 def f7():
-   print 7
+    def f7_1():
+        root2.destroy()
+        time = c.execute('''SELECT time text FROM info''')
+        time = c.fetchone()
 
-def f8():
-    print 8
+        while True:
+            if time == None:
+                break
+            if (time[0] != '0'):
+                print(time[0])
+                return
+            else:
+                time = c.fetchone()
+        print 'the file is not fix'
 
-def f9():
-    print 9
+    def f7_2():
+        root2.destroy()
+        time = c.execute('''SELECT time text FROM info''')
+        time = c.fetchone()
+        last = 0
+        while True:
+            if time == None:
+                break
+            if (time[0] != '0'):
+                last = time[0]
+                time = c.fetchone()
+            else:
+                time = c.fetchone()
+        if (last != 0):
+            print last
+        else:
+            print 'the file is not fix'
 
-def f10():
-     print 10
-
-def f11():
-    print 11
-
-def f12():
     root2 = Tk()
-    root2.title("Question 12")
-    root.geometry("800x600")
+    root2.title("Question 7")
+    root2.geometry("600x200")
     app2 = Frame(root2)
     app2.grid()
 
-    Button12_1 = Button(app2, text="enter here if you want to get the begining of the routh", command=f12_1, fg="blue", width=100,
-                      background='white')
-    Button12_1.pack()
-    Button12_2 = Button(app2, text="enter here if you want to get the end of the routh", command=f12_2, fg="blue",
+    Button7_1 = Button(app2, text="enter here if you want to get the begining of the routh", command=f7_1, fg="blue",
                         width=100,
-                        background='white')
+                        background='pink')
+    Button7_1.pack()
+    Button7_2 = Button(app2, text="enter here if you want to get the end of the routh", command=f7_2, fg="blue",
+                        width=100,
+                        background='pink')
+
+    Button7_2.pack()
 
 
-    Button12_2.pack()
-def f12_1():
-    time = c.execute('''SELECT time text FROM info''')
-    time = c.fetchone()
-    print ('the time is {0}'.format(time[0], type(time[0])))
 
-def f12_2():
-    time = c.execute('''SELECT time text FROM info''')
-    time = c.fetchall()
+
+def f8():
+    fix = c.execute('''SELECT fix FROM info''')
+    fix = c.fetchall()
     i=0
-    for row in time:
-        i=i+1
-    print ('the time is {0}'.format(time[i-1], type(time[i-1])))
+    for row in fix:
+        if (fix[i] == (u'1',)):
+            print('the file is fix')
+            return
+        else:
+            i=i+1
+    print ('the file is not fix')
 
 
-####################################################################################
-#con
+
+def f9():
+    def f9_1():
+        begin_lat=0
+        try:
+            begin_lat = (float)(E1.get())
+        except:
+            print 'no enter a float number'
+        root2.destroy()
+        c.execute('DELETE FROM info WHERE latitude>?',(begin_lat,))
+
+        conn.commit()
+
+
+    root2 = Tk()
+    root2.title("Question 9")
+    root2.geometry("600x200")
+
+
+    E1=Entry(root2,bd=5, text="enter a latitude point",width=50, background='pink')
+    Button9_1 = Button(root2, text="enter", command=f9_1, fg="blue", width=20, background='pink')
+    Button9_1.pack(side=LEFT)
+    E1.pack(side=RIGHT)
+
+
+
+
+def f10():
+    def f10_1():
+        begin_lon = 0
+        try:
+            begin_lon = (float)(E1.get())
+        except:
+            print 'no enter a float number'
+        root2.destroy()
+        c.execute('DELETE FROM info WHERE longtitude>?', (begin_lon,))
+
+        conn.commit()
+
+    root2 = Tk()
+    root2.title("Question 10")
+    root2.geometry("600x200")
+
+    E1 = Entry(root2, bd=5, text="enter a longtitude point", width=50, background='pink')
+    Button10_1 = Button(root2, text="enter", command=f10_1, fg="blue", width=20, background='pink')
+    Button10_1.pack(side=LEFT)
+    E1.pack(side=RIGHT)
+
+
+    ###################################################################################
+    # con
 def nmeaFileToCoords(f):
-    """Read a file full of NMEA sentences and return a string of lat/lon/z
-    coordinates.  'z' is often 0.
-    """
-    data = []
-    for line in f.readlines():
-        if line[:6] in ("$GPGGA", "$GPGLL"):
-            nmeagram.parseLine(line)
-            data.append(str(nmeagram.getField("Longitude")))
-            data.append(",")
-            data.append(str(nmeagram.getField("Latitude")))
-            data.append(",0 ")
-    return string.join(data, '')
+        """Read a file full of NMEA sentences and return a string of lat/lon/z
+        coordinates.  'z' is often 0.
+        """
+        data = []
+        for line in f.readlines():
+            if line[:6] in ("$GPGGA", "$GPGLL"):
+                nmeagram.parseLine(line)
+                data.append(str(nmeagram.getField("Longitude")))
+                data.append(",")
+                data.append(str(nmeagram.getField("Latitude")))
+                data.append(",0 ")
+        return string.join(data, '')
 
 def conKML(file_path):
-    KML_EXT = ".kml"
+        KML_EXT = ".kml"
 
-    KML_TEMPLATE = \
-        """<?xml version="1.0" encoding="UTF-8"?>
-        <kml xmlns="http://earth.google.com/kml/2.0">
-        <Document>
-          <name>NMEA to KML: %s</name>
-          <Style id="dwhStyle000">
-            <LineStyle id="dwhLineStyleRed6">
-              <color>7f0000ff</color>
-              <width>6</width>
-            </LineStyle>
-          </Style>
-          <Placemark>
-            <name>%s</name>
-            <styleUrl>#dwhStyle000</styleUrl>
-            <MultiGeometry>
-              <LineString>
-                <coordinates>
-                %s
-                </coordinates>
-              </LineString>
-            </MultiGeometry>
-          </Placemark>
-        </Document>
-        </kml>
-        """
+        KML_TEMPLATE = \
+            """<?xml version="1.0" encoding="UTF-8"?>
+            <kml xmlns="http://earth.google.com/kml/2.0">
+            <Document>
+              <name>NMEA to KML: %s</name>
+              <Style id="dwhStyle000">
+                <LineStyle id="dwhLineStyleRed6">
+                  <color>7f0000ff</color>
+                  <width>6</width>
+                </LineStyle>
+              </Style>
+              <Placemark>
+                <name>%s</name>
+                <styleUrl>#dwhStyle000</styleUrl>
+                <MultiGeometry>
+                  <LineString>
+                    <coordinates>
+                    %s
+                    </coordinates>
+                  </LineString>
+                </MultiGeometry>
+              </Placemark>
+            </Document>
+            </kml>
+            """
 
-    fn = file_path
-    assert os.path.exists(fn)
+        fn = file_path
+        assert os.path.exists(fn)
 
-    # Create the KML output file
-    fo = open(fn + KML_EXT, 'w')
-    fi = open(fn, 'r')
-    fo.write(KML_TEMPLATE % (fn, fn, nmeaFileToCoords(fi)))
-    fi.close()
-    fo.close()
-
+        # Create the KML output file
+        fo = open(fn + KML_EXT, 'w')
+        fi = open(fn, 'r')
+        fo.write(KML_TEMPLATE % (fn, fn, nmeaFileToCoords(fi)))
+        fi.close()
+        fo.close()
 def conCSV(file_path):
     input_file = open(file_path, 'r')
     output_file = open(file_path + '.csv', 'w')
@@ -212,33 +396,45 @@ def conCSV(file_path):
     # write the header line to the csv file
     writer.writerow(
         ['date', 'time', 'speed', 'latitude', 'latitude direction', 'longtitude', 'longtitude direction', 'fix',
-         'horizontal', 'altitude', 'altitude direction','altitude_location'])
+         'horizontal', 'altitude', 'altitude direction'])
 
     # iterate over all the rows in the nmea file
     date = None
     time = None
-    flag=0
+    flag = 0
     for row in reader:
 
-        # skip all lines that do not start with $GPRMC
-        if row[0].startswith('$GPGGA' or "$GPGLL") and row[6] == '1':
-            time = float(row[1])
-            latitude = row[2]
-            latitude_direction = row[3]
-            longtitude = row[4]
-            longtitude_direction = row[5]
-            fix = row[6]
-            horizontal = row[7]
-            altitude = row[8]
-            altitude_direction = row[9]
-            altitude_location = row[10]
-            flag = 1
-        elif row[0].startswith('$GPRMC') and flag == 1:
+        if row[0].startswith('$GPGGA'):
+
+            if row[6] != 1:
+                fix = row[6]
+                time = 0
+                latitude = 0
+                latitude_direction = 0
+                longtitude = 0
+                longtitude_direction = 0
+                horizontal = 0
+                altitude = 0
+                altitude_direction = 0
+            else:
+                time = float(row[1])
+                latitude = row[2]
+                latitude_direction = row[3]
+                longtitude = row[4]
+                longtitude_direction = row[5]
+                horizontal = row[7]
+                altitude = row[8]
+                altitude_direction = row[9]
+                flag = 1
+        elif row[0].startswith('$GPRMC'):
             speed = row[7]
             date = row[9]
             warning = row[2]
             if warning == 'V':
-                    continue
+                continue
+        if date != None and time != None:
+            date = None
+            time = None
 
             latitude = round(math.floor(float(latitude) / 100) + (float(latitude) % 100) / 60, 6)
             if latitude_direction == 'S':
@@ -256,7 +452,8 @@ def conCSV(file_path):
             # write the calculated/formatted values of the row that we just read into the csv file
             writer.writerow(
                 [date, time, speed, latitude, latitude_direction, longtitude, longtitude_direction, fix,
-                 horizontal, altitude, altitude_direction, altitude_location])
+                 horizontal, altitude, altitude_direction])
+
     input_file.close()
     output_file.close()
 
@@ -301,23 +498,19 @@ Button5.pack()
 Button6 = Button(app , text = "6. Return route time." , command = f6,fg = "blue",width=100, background='white')
 Button6.pack()
 
-Button7 = Button(app , text = "7. Return route length" , command = f7,fg = "blue",width=100, background='white')
+Button7 = Button(app , text = "7.  Return time of beginning/end of routeh" , command = f7,fg = "blue",width=100, background='white')
 Button7.pack()
 
 Button8 = Button(app , text = "8.Is the file working properly or not." , command = f8,fg = "blue",width=100, background='white')
 Button8.pack()
 
-Button9 = Button(app , text = "9.Erase all the marks in a specified longitude" , command = f9,fg = "blue",width=100, background='white')
+Button9 = Button(app , text = "9.Erase all the marks in a specified latitude" , command = f9,fg = "blue",width=100, background='white')
 Button9.pack()
 
-Button10 = Button(app, text="10.Erase all the marks in a specified latitude", command=f10, fg="blue", width=100, background='white')
+Button10 = Button(app, text="10.Erase all the marks in a specified longitude", command=f10, fg="blue", width=100, background='white')
 Button10.pack()
 
-Button11 = Button(app , text = "11.Format of place recognition (DGPS/GPS/ERROR)." , command = f11,fg = "blue",width=100, background='white')
-Button11.pack()
 
-Button12 = Button(app , text = "12. Return time of beginning/end of routeh" , command = f12,fg = "blue",width=100, background='white')
-Button12.pack()
 
 mainloop()
 
