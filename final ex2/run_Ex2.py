@@ -36,7 +36,7 @@ def f0():
             if not row:
                 continue
             elif row[0].startswith('$GPGGA') and row[6]=='1':
-                time= row[1]
+                time= float(row[1])
                 latitude = row[2]
                 lat_direction = row[3]
                 longitude = row[4]
@@ -81,19 +81,27 @@ def f4():
 
 def f5():
     speed=c.execute('''SELECT speed float FROM info''')
+    speed=c.fetchall()
     max=0
+    indexMax=0
+    i=0
     for row in speed:
+        i=i+1
         if row>max:
             max=row
-    print('the maximum speed is',max)
+            indexMax=i
+    print('the maximum speed is{0}'.format(speed[indexMax-1],type(speed[indexMax-1])))
 
 def f6():
     time=c.execute('''SELECT time text FROM info''')
-    last=0
+    time=c.fetchall()
+    last=0                              #מג פסדת
     for row in time:
         last=row
-        print last
-   # print('the ruote time is', last.time)
+    first=time[0]
+    print first
+    print last
+   # print('the ruote time is', last-time)
 
 def f7():
    print 7
@@ -111,7 +119,34 @@ def f11():
     print 11
 
 def f12():
-     print 12
+    root2 = Tk()
+    root2.title("Question 12")
+    root.geometry("800x600")
+    app2 = Frame(root2)
+    app2.grid()
+
+    Button12_1 = Button(app2, text="enter here if you want to get the begining of the routh", command=f12_1, fg="blue", width=100,
+                      background='white')
+    Button12_1.pack()
+    Button12_2 = Button(app2, text="enter here if you want to get the end of the routh", command=f12_2, fg="blue",
+                        width=100,
+                        background='white')
+
+
+    Button12_2.pack()
+def f12_1():
+    time = c.execute('''SELECT time text FROM info''')
+    time = c.fetchone()
+    print ('the time is {0}'.format(time[0], type(time[0])))
+
+def f12_2():
+    time = c.execute('''SELECT time text FROM info''')
+    time = c.fetchall()
+    i=0
+    for row in time:
+        i=i+1
+    print ('the time is {0}'.format(time[i-1], type(time[i-1])))
+
 
 ####################################################################################
 #con
@@ -177,25 +212,17 @@ def conCSV(file_path):
     # write the header line to the csv file
     writer.writerow(
         ['date', 'time', 'speed', 'latitude', 'latitude direction', 'longtitude', 'longtitude direction', 'fix',
-         'horizontal', 'altitude', 'altitude direction'])
+         'horizontal', 'altitude', 'altitude direction','altitude_location'])
 
     # iterate over all the rows in the nmea file
     date = None
     time = None
+    flag=0
     for row in reader:
 
         # skip all lines that do not start with $GPRMC
-
-        if row[0] in ("$GPRMC"):
-
-            warning = row[2]
-            if warning == 'V':
-                continue
-            speed = row[7]
-            date = row[9]
-
-        if row[0] in ("$GPGGA", "$GPGLL"):
-            time = row[1]
+        if row[0].startswith('$GPGGA' or "$GPGLL") and row[6] == '1':
+            time = float(row[1])
             latitude = row[2]
             latitude_direction = row[3]
             longtitude = row[4]
@@ -204,8 +231,14 @@ def conCSV(file_path):
             horizontal = row[7]
             altitude = row[8]
             altitude_direction = row[9]
-
-        if (date is not None and time is not None):
+            altitude_location = row[10]
+            flag = 1
+        elif row[0].startswith('$GPRMC') and flag == 1:
+            speed = row[7]
+            date = row[9]
+            warning = row[2]
+            if warning == 'V':
+                    continue
 
             latitude = round(math.floor(float(latitude) / 100) + (float(latitude) % 100) / 60, 6)
             if latitude_direction == 'S':
@@ -223,7 +256,7 @@ def conCSV(file_path):
             # write the calculated/formatted values of the row that we just read into the csv file
             writer.writerow(
                 [date, time, speed, latitude, latitude_direction, longtitude, longtitude_direction, fix,
-                 horizontal, altitude, altitude_direction])
+                 horizontal, altitude, altitude_direction, altitude_location])
     input_file.close()
     output_file.close()
 
