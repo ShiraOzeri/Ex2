@@ -30,7 +30,7 @@ def f0():
         flag = 0
         # Create table
         c.execute('''CREATE TABLE info
-                         (date text,time text,speed float, latitude text, latitude_direction text, longtitude text, longitude_direction text,fix text,horizontal_dilution text,altitude text,direct_of_altitude text)''')
+                         (date text,time text,speed float, latitude text, latitude_direction text, longtitude text, longitude_direction text,fix text,horizontal_dilution text,altitude text)''')
         # create a csv reader object from the input file (nmea files are basically csv)
         date=None
         time=None
@@ -48,7 +48,6 @@ def f0():
                     longtitude_direction = 0
                     horizontal = 0
                     altitude = 0
-                    altitude_direction = 0
                 else:
                     fix=1
                     time = float(row[1])
@@ -57,8 +56,7 @@ def f0():
                     longtitude = row[4]
                     longtitude_direction = row[5]
                     horizontal = row[7]
-                    altitude = row[8]
-                    altitude_direction = row[9]
+                    altitude = row[9]
                     flag = 1
             elif row[0].startswith('$GPRMC'):
                 speed = row[7]
@@ -67,12 +65,13 @@ def f0():
                 if warning == 'V':
                     continue
             if date!=None and time!=None:
-                 c.execute("INSERT INTO info VALUES (?,?,?,?,?,?,?,?,?,?,?)",(date,time,speed, latitude, latitude_direction, longtitude, longtitude_direction,fix,horizontal,altitude,altitude_direction))
+                 c.execute("INSERT INTO info VALUES (?,?,?,?,?,?,?,?,?,?)",(date,time,speed, latitude, latitude_direction, longtitude, longtitude_direction,fix,horizontal,altitude))
             # Save (commit) the changes
                  conn.commit()
                  flag=0
                  date=None
                  time=None
+    DBtoCSV()
 
     # We can also close the connection if we are done with it.
     # Just be sure any changes have been committed or they will be lost.
@@ -88,8 +87,9 @@ def f1():
             except:
                 print 'no enter a float number'
             root3.destroy()
-            c.execute('DELETE FROM info WHERE time<?', (end_time,))
+            c.execute('DELETE FROM info WHERE time>?', (end_time,))
             conn.commit()
+            DBtoCSV()
         begin_time = 0
         try:
             begin_time = (float)(E1.get())
@@ -97,6 +97,7 @@ def f1():
             print 'no enter a float number'
         c.execute('DELETE FROM info WHERE time<?', (begin_time,))
         conn.commit()
+
         root2.destroy()
 
         root3 = Tk()
@@ -135,15 +136,16 @@ def f2():
 
 def f3():
     def f3_1():
-        begin_alt = 0
+        end_alt = 0
         try:
-            begin_alt = (float)(E1.get())
+            end_alt = (float)(E1.get())
         except:
             print 'no enter a float number'
         root2.destroy()
-        c.execute('DELETE FROM info WHERE altitude>?', (begin_alt,))
+        c.execute('DELETE FROM info WHERE altitude>?', (end_alt,))
 
         conn.commit()
+        DBtoCSV()
 
     root2 = Tk()
     root2.title("Question 3")
@@ -296,6 +298,7 @@ def f9():
         c.execute('DELETE FROM info WHERE latitude>?',(begin_lat,))
 
         conn.commit()
+        DBtoCSV()
 
 
     root2 = Tk()
@@ -322,6 +325,7 @@ def f10():
         c.execute('DELETE FROM info WHERE longtitude>?', (begin_lon,))
 
         conn.commit()
+        DBtoCSV()
 
     root2 = Tk()
     root2.title("Question 10")
@@ -335,6 +339,15 @@ def f10():
 
     ###################################################################################
     # con
+def DBtoCSV():
+    conn = sqlite3.connect("MyDb.db")  # open db
+    cursor = conn.cursor()  # cursor to the db
+    cursor.execute("select * from info;")  # execute a sql script
+
+    with open("out.csv", "wb") as csv_file:  # writing to csv
+        csv_writer = csv.writer(csv_file)
+        csv_writer.writerow([i[0] for i in cursor.description])  # write headers
+        csv_writer.writerows(cursor)
 def nmeaFileToCoords(f):
         """Read a file full of NMEA sentences and return a string of lat/lon/z
         coordinates.  'z' is often 0.
@@ -396,7 +409,7 @@ def conCSV(file_path):
     # write the header line to the csv file
     writer.writerow(
         ['date', 'time', 'speed', 'latitude', 'latitude direction', 'longtitude', 'longtitude direction', 'fix',
-         'horizontal', 'altitude', 'altitude direction'])
+         'horizontal', 'altitude'])
 
     # iterate over all the rows in the nmea file
     date = None
@@ -415,7 +428,6 @@ def conCSV(file_path):
                 longtitude_direction = 0
                 horizontal = 0
                 altitude = 0
-                altitude_direction = 0
             else:
                 time = float(row[1])
                 latitude = row[2]
@@ -423,8 +435,7 @@ def conCSV(file_path):
                 longtitude = row[4]
                 longtitude_direction = row[5]
                 horizontal = row[7]
-                altitude = row[8]
-                altitude_direction = row[9]
+                altitude = row[9]
                 flag = 1
         elif row[0].startswith('$GPRMC'):
             speed = row[7]
@@ -452,7 +463,7 @@ def conCSV(file_path):
             # write the calculated/formatted values of the row that we just read into the csv file
             writer.writerow(
                 [date, time, speed, latitude, latitude_direction, longtitude, longtitude_direction, fix,
-                 horizontal, altitude, altitude_direction])
+                 horizontal, altitude])
 
     input_file.close()
     output_file.close()
