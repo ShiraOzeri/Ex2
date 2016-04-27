@@ -81,15 +81,30 @@ def f0():
 def f1():
     def f1_1():
         def f1_2():
+            def fe():
+                root4.destroy()
             end_time = 0
             try:
                 end_time = (float)(E2.get())
             except:
                 print 'no enter a float number'
-            root3.destroy()
             c.execute('DELETE FROM info WHERE time>?', (end_time,))
             conn.commit()
             DBtoCSV()
+
+            root3.destroy()
+            root4 = Tk()
+            root4.title("end time")
+            root4.geometry("600x200")
+            ButtonCSV = Button(root4, text="convert to csv", width=100, fg='red', font=16, command=DBtoCSV2)
+            ButtonCSV.pack()
+
+            ButtonKML = Button(root4, text="convert to kml", width=100, fg='red', font=16, command=conKML)
+            ButtonKML.pack()
+
+            ButtonEXIT = Button(root4, text="exit", width=100, fg='red', font=16, command=fe)
+            ButtonEXIT.pack()
+
         begin_time = 0
         try:
             begin_time = (float)(E1.get())
@@ -104,20 +119,31 @@ def f1():
         root3.title("end time")
         root3.geometry("600x200")
 
-        E2 = Entry(root3, bd=5, text="enter a end time", fg="blue", width=20, background='pink')
+        E2 = Entry(root3, bd=5, fg="blue", width=20, background='pink')
+        ButtonE2=Button(root3, text="enter a end time",width=100,fg='red',font=16)
+        ButtonE2_1 = Button(root3, text="for example, if you want an hour- 23:40:01, type-234001", width=100, fg='red', font=14)
 
         Button1_2 = Button(root3, text="enter", command=f1_2, fg="blue", width=20, background='pink')
-        Button1_2.pack(side=LEFT)
-        E2.pack(side=RIGHT)
+        ButtonE2.pack()
+        ButtonE2_1.pack()
+        E2.pack(side=LEFT)
+        Button1_2.pack(side=RIGHT)
+
 
     root2 = Tk()
     root2.title("begin time")
     root2.geometry("600x200")
 
-    E1 = Entry(root2, bd=5, text="enter a begin time",fg="blue", width=20, background='pink')
+    E1 = Entry(root2, bd=5,fg="blue", width=20, background='pink')
     Button1_1 = Button(root2, text="enter", command=f1_1, fg="blue", width=20, background='pink')
-    Button1_1.pack(side=RIGHT)
+    ButtonE1=Button(root2,text="enter a begin time",width=100,fg='red',font=16)
+    ButtonE1_1 = Button(root2, text="for example, if you want an hour- 23:40:01, type-234001", width=100, fg='red',
+                        font=14)
+
+    ButtonE1.pack()
+    ButtonE1_1.pack()
     E1.pack(side=LEFT)
+    Button1_1.pack(side=RIGHT)
 
 
 def f2():
@@ -344,7 +370,16 @@ def DBtoCSV():
     cursor = conn.cursor()  # cursor to the db
     cursor.execute("select * from info;")  # execute a sql script
 
-    with open("out.csv", "wb") as csv_file:  # writing to csv
+    with open("MyDB.csv", "wb") as csv_file:  # writing to csv
+        csv_writer = csv.writer(csv_file)
+        csv_writer.writerow([i[0] for i in cursor.description])  # write headers
+        csv_writer.writerows(cursor)
+def DBtoCSV2():
+    conn = sqlite3.connect("MyDb.db")  # open db
+    cursor = conn.cursor()  # cursor to the db
+    cursor.execute("select * from info;")  # execute a sql script
+
+    with open(file_path+".csv", "wb") as csv_file:  # writing to csv
         csv_writer = csv.writer(csv_file)
         csv_writer.writerow([i[0] for i in cursor.description])  # write headers
         csv_writer.writerows(cursor)
@@ -362,7 +397,7 @@ def nmeaFileToCoords(f):
                 data.append(",0 ")
         return string.join(data, '')
 
-def conKML(file_path):
+def conKML():
         KML_EXT = ".kml"
 
         KML_TEMPLATE = \
@@ -400,7 +435,7 @@ def conKML(file_path):
         fo.write(KML_TEMPLATE % (fn, fn, nmeaFileToCoords(fi)))
         fi.close()
         fo.close()
-def conCSV(file_path):
+def conCSV():
     input_file = open(file_path, 'r')
     output_file = open(file_path + '.csv', 'w')
     reader = csv.reader(input_file)
@@ -419,7 +454,7 @@ def conCSV(file_path):
 
         if row[0].startswith('$GPGGA'):
 
-            if row[6] != 1:
+            if row[6] != '1':
                 fix = row[6]
                 time = 0
                 latitude = 0
@@ -437,6 +472,7 @@ def conCSV(file_path):
                 horizontal = row[7]
                 altitude = row[9]
                 flag = 1
+                fix=row[6]
         elif row[0].startswith('$GPRMC'):
             speed = row[7]
             date = row[9]
@@ -444,8 +480,6 @@ def conCSV(file_path):
             if warning == 'V':
                 continue
         if date != None and time != None:
-            date = None
-            time = None
 
             latitude = round(math.floor(float(latitude) / 100) + (float(latitude) % 100) / 60, 6)
             if latitude_direction == 'S':
@@ -468,7 +502,6 @@ def conCSV(file_path):
     input_file.close()
     output_file.close()
 
-
 ######################################################################################
 root = Tk()
 root.title("Ex2")
@@ -484,9 +517,9 @@ Button00.pack()
 
 Button000 = Button(app , text = ""  )
 Button000.pack()
-ButtonConKML = Button(app , text = "Make a kml file", command = conKML(file_path)  )
+ButtonConKML = Button(app , text = "Make a kml file", command = conKML())
 ButtonConKML.pack()
-ButtonConCSV = Button(app , text = "Make a CSV file", command = conCSV(file_path)  )
+ButtonConCSV = Button(app , text = "Make a CSV file", command = conCSV())
 ButtonConCSV.pack()
 Button0000 = Button(app, text="")
 Button0000.pack()
@@ -520,6 +553,8 @@ Button9.pack()
 
 Button10 = Button(app, text="10.Erase all the marks in a specified longitude", command=f10, fg="blue", width=100, background='white')
 Button10.pack()
+
+
 
 
 
