@@ -30,7 +30,7 @@ def f0():
         flag = 0
         # Create table
         c.execute('''CREATE TABLE info
-                         (date text,time text,speed float, latitude text, latitude_direction text, longtitude text, longitude_direction text,fix text,horizontal_dilution text,altitude text)''')
+                         (date text,time text,speed float, latitude text, latitude_direction text, longitude text, longitude_direction text,fix text,horizontal_dilution text,altitude text)''')
         # create a csv reader object from the input file (nmea files are basically csv)
         date=None
         time=None
@@ -44,7 +44,7 @@ def f0():
                     time = 0
                     latitude = 0
                     latitude_direction = 0
-                    longtitude = 0
+                    longitude = 0
                     longtitude_direction = 0
                     horizontal = 0
                     altitude = 0
@@ -53,7 +53,7 @@ def f0():
                     time = float(row[1])
                     latitude = row[2]
                     latitude_direction = row[3]
-                    longtitude = row[4]
+                    longitude = row[4]
                     longtitude_direction = row[5]
                     horizontal = row[7]
                     altitude = row[9]
@@ -65,7 +65,7 @@ def f0():
                 if warning == 'V':
                     continue
             if date!=None and time!=None:
-                 c.execute("INSERT INTO info VALUES (?,?,?,?,?,?,?,?,?,?)",(date,time,speed, latitude, latitude_direction, longtitude, longtitude_direction,fix,horizontal,altitude))
+                 c.execute("INSERT INTO info VALUES (?,?,?,?,?,?,?,?,?,?)",(date,time,speed, latitude, latitude_direction, longitude, longtitude_direction,fix,horizontal,altitude))
             # Save (commit) the changes
                  conn.commit()
                  flag=0
@@ -99,7 +99,7 @@ def f1():
             ButtonCSV = Button(root4, text="convert to csv", width=100, fg='red', font=16, command=DBtoCSV2)
             ButtonCSV.pack()
 
-            ButtonKML = Button(root4, text="convert to kml", width=100, fg='red', font=16, command=conKML)
+            ButtonKML = Button(root4, text="convert to kml", width=100, fg='red', font=16, command=DBtoKML)
             ButtonKML.pack()
 
             ButtonEXIT = Button(root4, text="exit", width=100, fg='red', font=16, command=fe)
@@ -162,6 +162,8 @@ def f2():
 
 def f3():
     def f3_1():
+        def fe():
+            root4.destroy()
         end_alt = 0
         try:
             end_alt = (float)(E1.get())
@@ -173,12 +175,26 @@ def f3():
         conn.commit()
         DBtoCSV()
 
+        root4 = Tk()
+        root4.title("end time")
+        root4.geometry("600x200")
+        ButtonCSV = Button(root4, text="convert to csv", width=100, fg='red', font=16, command=DBtoCSV2)
+        ButtonCSV.pack()
+
+        ButtonKML = Button(root4, text="convert to kml", width=100, fg='red', font=16, command=DBtoKML)
+        ButtonKML.pack()
+
+        ButtonEXIT = Button(root4, text="exit", width=100, fg='red', font=16, command=fe)
+        ButtonEXIT.pack()
+
     root2 = Tk()
     root2.title("Question 3")
     root2.geometry("600x200")
 
     E1 = Entry(root2, bd=5, text="enter a altitude point", width=50, background='pink')
+    ButtonE1 = Button(root2, text="enter a high altitude to Stop the route(above sea level)", width=100, fg='red', font=14)
     Button3_1 = Button(root2, text="enter", command=f3_1, fg="blue", width=20, background='pink')
+    ButtonE1.pack()
     Button3_1.pack(side=LEFT)
     E1.pack(side=RIGHT)
 
@@ -297,8 +313,6 @@ def f7():
     Button7_2.pack()
 
 
-
-
 def f8():
     fix = c.execute('''SELECT fix FROM info''')
     fix = c.fetchall()
@@ -312,28 +326,42 @@ def f8():
     print ('the file is not fix')
 
 
-
 def f9():
     def f9_1():
+        def fe():
+            root4.destroy()
         begin_lat=0
         try:
             begin_lat = (float)(E1.get())
         except:
             print 'no enter a float number'
-        root2.destroy()
+
         c.execute('DELETE FROM info WHERE latitude>?',(begin_lat,))
 
         conn.commit()
         DBtoCSV()
+        root2.destroy()
 
+        root4 = Tk()
+        root4.title("end time")
+        root4.geometry("600x200")
+        ButtonCSV = Button(root4, text="convert to csv", width=100, fg='red', font=16, command=DBtoCSV2)
+        ButtonCSV.pack()
+
+        ButtonKML = Button(root4, text="convert to kml", width=100, fg='red', font=16, command=DBtoKML)
+        ButtonKML.pack()
+
+        ButtonEXIT = Button(root4, text="exit", width=100, fg='red', font=16, command=fe)
+        ButtonEXIT.pack()
 
     root2 = Tk()
     root2.title("Question 9")
     root2.geometry("600x200")
 
-
-    E1=Entry(root2,bd=5, text="enter a latitude point",width=50, background='pink')
+    E1=Entry(root2,bd=5,width=50, background='pink')
+    ButtonE1=Button(root2,text="enter a latitude point (for example-5920.7009)",font=14,fg='red')
     Button9_1 = Button(root2, text="enter", command=f9_1, fg="blue", width=20, background='pink')
+    ButtonE1.pack()
     Button9_1.pack(side=LEFT)
     E1.pack(side=RIGHT)
 
@@ -342,23 +370,42 @@ def f9():
 
 def f10():
     def f10_1():
+        def fe():
+            root4.destroy()
+
         begin_lon = 0
         try:
             begin_lon = (float)(E1.get())
         except:
             print 'no enter a float number'
-        root2.destroy()
-        c.execute('DELETE FROM info WHERE longtitude>?', (begin_lon,))
+        print begin_lon
+
+        c.execute('DELETE FROM info WHERE latitude>?', (begin_lon,))
 
         conn.commit()
         DBtoCSV()
+        root2.destroy()
+
+        root4 = Tk()
+        root4.title("end time")
+        root4.geometry("600x200")
+        ButtonCSV = Button(root4, text="convert to csv", width=100, fg='red', font=16, command=DBtoCSV2)
+        ButtonCSV.pack()
+
+        ButtonKML = Button(root4, text="convert to kml", width=100, fg='red', font=16, command=DBtoKML)
+        ButtonKML.pack()
+
+        ButtonEXIT = Button(root4, text="exit", width=100, fg='red', font=16, command=fe)
+        ButtonEXIT.pack()
 
     root2 = Tk()
     root2.title("Question 10")
     root2.geometry("600x200")
 
-    E1 = Entry(root2, bd=5, text="enter a longtitude point", width=50, background='pink')
+    E1 = Entry(root2, bd=5, width=50, background='pink')
+    ButtonE1 = Button(root2, text="enter a longitude point (for example-03455.30063)", font=14, fg='red')
     Button10_1 = Button(root2, text="enter", command=f10_1, fg="blue", width=20, background='pink')
+    ButtonE1.pack()
     Button10_1.pack(side=LEFT)
     E1.pack(side=RIGHT)
 
@@ -383,6 +430,45 @@ def DBtoCSV2():
         csv_writer = csv.writer(csv_file)
         csv_writer.writerow([i[0] for i in cursor.description])  # write headers
         csv_writer.writerows(cursor)
+
+
+def DBtoKML():
+    skip = 5
+    database = sqlite3.connect("MyDb.db")
+    pois = database.execute("SELECT * FROM info;")
+    file = str(file_path) + '.kml'
+    FILE = open(file, 'w')
+    FILE.truncate(0)
+    FILE.write('<?xml version="1.0" encoding="iso-8859-1"?>\n')
+    FILE.write('<kml xmlns="http://earth.google.com/kml/2.0">\n')
+    FILE.write('    <Document>\n')
+    FILE.write('     <Folder>\n')
+    FILE.write('     <name>Point Features</name>\n')
+    FILE.write('     <description>Point Features</description>\n\n')
+    j = 0
+    for poi in pois:
+        if j % skip == 0:
+            FILE.write('<Placemark>\n')
+            FILE.write('    <TimeStamp>\n')
+            FILE.write('     <when>%s%s</when>\n' % (poi[0], poi[1]))
+            FILE.write('    </TimeStamp>\n')
+            lat = float(poi[3][:2]) + (float(poi[3][2:]) / 60)
+            lon = float(poi[5][:3]) + (float(poi[5][3:]) / 60)
+            FILE.write('    <description><![CDATA[Lat: %s <br> Lon: %s<br> Speed: %s <br>]]></description>\n' % (
+                lat, lon, (poi[2])))
+            FILE.write('    <Point>\n')
+
+            FILE.write('        <coordinates>%s,%s,%s</coordinates>\n' % (str(lon), str(lat), poi[9]))
+            FILE.write('    </Point>\n')
+            FILE.write('</Placemark>\n')
+            j = j + 1
+        else:
+            j = j + 1
+    FILE.write('        </Folder>\n')
+    FILE.write('    </Document>\n')
+    FILE.write('</kml>\n')
+    FILE.close()
+    database.close()
 def nmeaFileToCoords(f):
         """Read a file full of NMEA sentences and return a string of lat/lon/z
         coordinates.  'z' is often 0.
@@ -481,18 +567,11 @@ def conCSV():
                 continue
         if date != None and time != None:
 
-            latitude = round(math.floor(float(latitude) / 100) + (float(latitude) % 100) / 60, 6)
             if latitude_direction == 'S':
                 latitude = latitude * -1
 
-            longtitude = round(math.floor(float(longtitude) / 100) + (float(longtitude) % 100) / 60, 6)
             if longtitude_direction == 'W':
                 longtitude = longtitude * -1
-
-            # speed is given in knots, you'll probably rather want it in km/h and rounded to full integer values.
-            # speed has to be converted from string to float first in order to do calculations with it.
-            # conversion to int is to get rid of the tailing ".0".
-            speed = int(round(float(speed) * 1.852, 0))
 
             # write the calculated/formatted values of the row that we just read into the csv file
             writer.writerow(
