@@ -13,14 +13,17 @@ from datetime import datetime
 ####################################################################################
 file_path = ""
 ####################################################################################
+#tike the file_path from user
 Tk().withdraw()  # we don't want a full GUI, so keep the root window from appearing
 filename = askopenfilename()  # show an "Open" dialog box and return the path to the selected file
 file_path= filename
 if(file_path ==""):
     sys.exit(0)
+#connected to the data base
 conn = sqlite3.connect('MyDb.db')
 c = conn.cursor()
 ################################################imput to DB###########################################
+#put the info to ouer data base
 def f0():
     INPUT_FILENAME = file_path
     with open(INPUT_FILENAME, 'r') as input_file:
@@ -77,7 +80,7 @@ def f0():
     # Just be sure any changes have been committed or they will be lost.
     #conn.close()
 
-
+#ans to Q1 return the path in spazipic ouer
 def f1():
     def f1_1():
         def f1_2():
@@ -145,7 +148,7 @@ def f1():
     E1.pack(side=LEFT)
     Button1_1.pack(side=RIGHT)
 
-
+#return the ans to Q2 from the data base
 def f2():
     c.execute('''SELECT horizontal_dilution text FROM info''')
     horizontal = c.fetchone()
@@ -159,7 +162,7 @@ def f2():
         else:
             horizontal = c.fetchall()
     print ('the file is not fix')
-
+#return the ans to Q3 from the data base
 def f3():
     def f3_1():
         def fe():
@@ -197,7 +200,7 @@ def f3():
     ButtonE1.pack()
     Button3_1.pack(side=LEFT)
     E1.pack(side=RIGHT)
-
+#return the ans to Q4 from the data base
 def f4():
     c.execute('''SELECT fix FROM info''')
     fix=c.fetchone()
@@ -214,7 +217,7 @@ def f4():
             date=c.fetchone()
     print('the file is not fix')
 
-
+#return the ans to Q5 from the data base
 def f5():
     fix = c.execute('''SELECT fix FROM info''')
     fix = c.fetchall()
@@ -233,7 +236,7 @@ def f5():
         print 'the file is not fix'
     else:
         print('the maximum speed is{0}'.format(speed[indexMax-1],type(speed[indexMax-1])))
-
+#return the ans to Q6 from the data base
 def f6():
     time=c.execute('''SELECT time text FROM info''')
     time=c.fetchone()
@@ -261,7 +264,7 @@ def f6():
     else:
         print (last-first)
    # print('the ruote time is', last-time)
-
+#return the ans to Q7 from the data base
 def f7():
     def f7_1():
         root2.destroy()
@@ -312,7 +315,7 @@ def f7():
 
     Button7_2.pack()
 
-
+#return the ans to Q8 from the data base
 def f8():
     fix = c.execute('''SELECT fix FROM info''')
     fix = c.fetchall()
@@ -325,7 +328,7 @@ def f8():
             i=i+1
     print ('the file is not fix')
 
-
+#return the ans to Q9 from the data base
 def f9():
     def f9_1():
         def fe():
@@ -367,7 +370,7 @@ def f9():
 
 
 
-
+#return the ans to Q10 from the data base
 def f10():
     def f10_1():
         def fe():
@@ -411,7 +414,7 @@ def f10():
 
 
     ###################################################################################
-    # con
+    # convert from the data base to csv file
 def DBtoCSV():
     conn = sqlite3.connect("MyDb.db")  # open db
     cursor = conn.cursor()  # cursor to the db
@@ -431,7 +434,7 @@ def DBtoCSV2():
         csv_writer.writerow([i[0] for i in cursor.description])  # write headers
         csv_writer.writerows(cursor)
 
-
+# convert from the data base to kml file
 def DBtoKML():
     skip = 5
     database = sqlite3.connect("MyDb.db")
@@ -482,7 +485,7 @@ def nmeaFileToCoords(f):
                 data.append(str(nmeagram.getField("Latitude")))
                 data.append(",0 ")
         return string.join(data, '')
-
+# convert from nmea to kml file
 def conKML():
         KML_EXT = ".kml"
 
@@ -582,6 +585,7 @@ def conCSV():
     output_file.close()
 
 ######################################################################################
+#the gui this make the munu on ouer system
 root = Tk()
 root.title("Ex2")
 root.geometry("800x600")
@@ -603,6 +607,8 @@ ButtonConCSV.pack()
 Button0000 = Button(app, text="")
 Button0000.pack()
 ##############################################################################################
+#here this is all the buttons on the system
+#
 Button1 = Button(app , text = "1.Creating a new route between specific hours" , command = f1,fg = "blue",width=100, background='white')
 Button1.pack()
 
